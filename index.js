@@ -1,10 +1,10 @@
 const http = require('http')
 const fs = require('fs')
 
-const homePage = fs.readFileSync('./project/index.html','utf8')
-const aboutPage = fs.readFileSync('./project/about.html','utf8')
-const contactPage = fs.readFileSync('./project/contact.html','utf8')
-const errorPage = fs.readFileSync('./project/404.html','utf8')
+const homePage = fs.readFileSync('./index.html','utf8')
+const aboutPage = fs.readFileSync('./about.html','utf8')
+const contactPage = fs.readFileSync('./contact.html','utf8')
+const errorPage = fs.readFileSync('./404.html','utf8')
 
 const server = http.createServer((req,res) => {
 	const url = req.url
